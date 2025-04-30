@@ -1,0 +1,279 @@
+<!-- ARCHIVO DISPONIBLE SOLO PARA ESTUDIANTES -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDM TRANSPORTE</title>
+    <!-- Inclusion de librerias BOOSTRAP5, GOOGLE FONTS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #ff0e0e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        nav-header {
+            background-color: #ff0e0e;
+            color: white;
+        }
+
+        .modal-backdrop {
+            z-index: 4 !important;
+            /* Asegurarse de que el backdrop esté debajo del modal */
+        }
+
+        .modal {
+            z-index: 5 !important;
+            /* Asegurarse de que el modal esté encima del backdrop */
+        }
+
+        .nav-link {
+            color: white;
+            border-radius: 5px;
+        }
+
+        .nav-link:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .card {
+            border: none;
+            border-radius: 1rem;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: -50px;
+            border: 4px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        :root {
+            --color-rojo-principal: #ff0e0e;
+        }
+
+        .card {
+            border: none;
+            border-radius: 1rem;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: -50px;
+            border: 4px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .bg-header-perfil {
+            background-color: var(--color-rojo-principal);
+            height: 120px;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        .card-title {
+            color: var(--color-rojo-principal);
+        }
+
+        .btn-rojo {
+            background-color: var(--color-rojo-principal);
+            color: white;
+            border: none;
+        }
+
+        .btn-rojo:hover {
+            background-color: #cc0b0b;
+        }
+
+        .icono-rojo {
+            color: var(--color-rojo-principal);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-header">
+            <h1>Sistema Transporte</h1>
+            <p>=Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, veritatis?</p>
+        </div>
+        <nav class="navbar navbar-expand-lg nav-header">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="notificaciones.html">Mis notificaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mi historial de viajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mi historial de pago</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active bg-light" aria-current="page" href="perfil.html">Mi perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="window.location.href='../index.html'">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+                    <div class="card shadow-lg text-center">
+                        <div class="bg-header-perfil"></div>
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Foto de perfil" class="profile-img mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">William Shakespeare</h5>
+                            <p class="card-subtitle mb-3 text-muted">Universidad del Norte</p>
+                            <ul class="list-group list-group-flush text-start mb-3">
+                                <li class="list-group-item"><i
+                                        class="bi bi-person-badge me-2 icono-rojo"></i><strong>DNI:</strong> 56666665
+                                </li>
+                                <li class="list-group-item"><i
+                                        class="bi bi-telephone me-2 icono-rojo"></i><strong>Teléfono:</strong>
+                                    051653266116
+                                </li>
+
+                                    
+                                <li class="list-group-item"><i
+                                        class="bi bi-person me-2 icono-rojo"></i><strong>Usuario:</strong> willianshaks
+                                </li>
+                                <li class="list-group-item"><i
+                                        class="bi bi-lock me-2 icono-rojo"></i><strong>Clave:</strong> *********</li>
+                            </ul>
+                            <button type="button" class="btn btn-rojo w-100" onclick="abrirModal('modal-edit-datos')"><i
+                                    class="bi bi-pencil-square"></i> Editar datos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MODAL EDITAR PERFIL -->
+        <div class="modal" tabindex="-1" id="modal-edit-datos">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title mx-auto">Puedes editar los siguintes datos</h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <form id="form-estudiante">
+                            <div class="row">
+                                
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
+                                        placeholder="Ingrese su nombre completo" required>
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="facultad" class="form-label">Facultad</label>
+                                    <!-- #CAMBIAR LA CANTIDAD DE CARACTERES EN LE BD PARA FACULTAD -->
+                                    <select class="form-select" id="facultad" name="facultad" required>
+                                        <option value="">Universidad Nacional de Asuncion</option>
+                                        <option value="">Universidad del Norte</option>
+                                        <option value="">Universidad Tecnológica Intercontinental</option>
+                                        <option value="">Universidad Técnica de Comercialización y Desarrollo</option>
+                                        <option value="">Facultad Juan Pablo II</option>
+                                        <option value="">Universidad Catolica</option>
+                                        <option value="">Universidad Politécnica y Artística del Paraguay</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="text" class="form-control" id="telefono" name="telefono"
+                                        placeholder="Ingrese su número de teléfono" required>
+                                </div>
+
+                                <!--  
+                                        <div class="col-12 col-md-6 mb-3">
+                                    <label for="correo" class="form-label">Usuario</label>
+                                    <input type="text" class="form-control" id="correo" name="correo"
+                                        placeholder="Crea un usuario" readonly>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                    <label for="correo" class="form-label">Clave</label>
+                                    <input type="password" class="form-control" id="correo" name="correo"
+                                        placeholder="********" readonly>
+                                        
+                                    </div>
+                                -->
+
+
+                            </div>
+
+                            <div class="d-flex justify-content-center gap-4">
+                                <button type="submit" class="btn btn-success">Confirmar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                            </div>
+                    </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        function abrirModal(idModal) {
+            const modal = document.getElementById(idModal);
+            if (modal) {
+                const bsModal = new bootstrap.Modal(modal);
+                bsModal.show();
+            } else {
+                console.error("No se encontró el modal con ID:", idModal);
+            }
+        }
+    </script>
+</body>
+
+</html>
