@@ -73,10 +73,10 @@
           <ul class="navbar-nav">
 
             <li class="nav-item">
-              <a class="nav-link active bg-light" aria-current="page" href="estudiantestabla.html">Estudiantes</a>
+              <a class="nav-link" aria-current="page" href="estudiantestabla.html">Estudiantes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="conductorestabla.html">Conductores</a>
+              <a class="nav-link active bg-light" aria-current="page" href="conductorestabla.html">Conductores</a>
             </li>
            
             <li class="nav-item">
@@ -105,12 +105,12 @@
   </header>
 
   <main>
-    <h1 class="text-center mb-4">ESTUDIANTES</h1>
+    <h1 class="text-center mb-4">CONDUCTORES</h1>
     <div class="container">
       <div class="d-flex flex-wrap justify-content-center justify-content-md-between align-items-center gap-2 mb-3">
 
         <!-- Botón Agregar -->
-        <button type="button" class="btn btn-success btn-sm" onclick="abrirModal('modal-ag-estudiante')">
+        <button type="button" class="btn btn-success btn-sm" onclick="abrirModal('modal-ag-conductor')">
           <i class="bi bi-person-plus-fill"></i> Agregar
         </button>
 
@@ -142,9 +142,9 @@
             <tr>
               <th scope="col">Documento</th>
               <th scope="col">Nombre</th>
-              <th scope="col">Facultad</th>
+              
               <th scope="col">Teléfono</th>
-              <th scope="col">Correo</th>
+             
               <th scope="col">Estado</th>
               <th scope="col">Acciones</th>
             </tr>
@@ -152,25 +152,24 @@
           <tbody>
             <tr>
               <td>342342</td>
-              <td>Javier Lopez Mendoza</td>
-              <td>UNINORTE</td>
+              <td>Marcelo</td>
+              
               <td>518520050</td>
-              <td>javierlopez@gmail.com</td>
+              
               <td>ACTIVO</td>
               <td>
                 <!-- Botón Editar -->
                 <!-- Versión para móviles -->
                 <button type="button" class="btn btn-warning btn-lg d-sm-none"
-                  onclick="abrirModal('modal-edit-estudiante')">
+                  onclick="abrirModal('modal-edit-conductor')">
                   <i class="bi bi-pencil-square"></i>
                 </button>
                 <!-- Versión para pantallas >= sm -->
                 <button type="button" class="btn btn-warning btn-sm d-none d-sm-inline"
-                  onclick="abrirModal('modal-edit-estudiante')">
+                  onclick="abrirModal('modal-edit-conductor')">
                   <i class="bi bi-pencil-square"></i>
                 </button>
 
-                
                 <!-- 
                 # Botón Eliminar
                 # Versión para móviles
@@ -185,65 +184,7 @@
 
               </td>
             </tr>
-            <!-- #BORRAR REGISTROS DE PRUEBA A PARTIR DE AQUI -->
-
-            <tr>
-              <td>458921</td>
-              <td>Ana María Pérez</td>
-              <td>UAM</td>
-              <td>555782334</td>
-              <td>ana.perez@uam.edu</td>
-              <td>ACTIVO</td>
-              <td>
-                <button type="button" class="btn btn-warning btn-sm" onclick="abrirModal('modal-edit-estudiante')">
-                  <i class="bi bi-pencil-square"></i>
-                </button>
-                
-              </td>
-            </tr>
-            <tr>
-              <td>563910</td>
-              <td>Carlos Martínez</td>
-              <td>PUCMM</td>
-              <td>809233445</td>
-              <td>carlos.martinez@pucmm.edu</td>
-              <td>INACTIVO</td>
-              <td>
-                <button type="button" class="btn btn-warning btn-sm" onclick="abrirModal('modal-edit-estudiante')">
-                  <i class="bi bi-pencil-square"></i>
-                </button>
-                
-              </td>
-            </tr>
-            <tr>
-              <td>764578</td>
-              <td>Laura Rodríguez</td>
-              <td>UTP</td>
-              <td>623467890</td>
-              <td>laura.rodriguez@utp.edu</td>
-              <td>ACTIVO</td>
-              <td>
-                <button type="button" class="btn btn-warning btn-sm" onclick="abrirModal('modal-edit-estudiante')">
-                  <i class="bi bi-pencil-square"></i>
-                </button>
-                
-              </td>
-            </tr>
-            <tr>
-              <td>983456</td>
-              <td>Pedro Sánchez</td>
-              <td>UPB</td>
-              <td>313670999</td>
-              <td>pedro.sanchez@upb.edu</td>
-              <td>ACTIVO</td>
-              <td>
-                <button type="button" class="btn btn-warning btn-sm" onclick="abrirModal('modal-edit-estudiante')">
-                  <i class="bi bi-pencil-square"></i>
-                </button>
-                
-              </td>
-            </tr>
-
+           
           </tbody>
         </table>
       </div>
@@ -252,12 +193,12 @@
 
     </div>
 
-    <!-- MODAL AGREGAR ESTUDIANTE -->
-    <div class="modal" tabindex="-1" id="modal-ag-estudiante">
+    <!-- MODAL AGREGAR CONDUCTOR -->
+    <div class="modal" tabindex="-1" id="modal-ag-conductor">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title mx-auto">Agregar estudiante</h5>
+            <h5 class="modal-title mx-auto">Agregar conductor</h5>
           </div>
           <div class="modal-body">
 
@@ -274,20 +215,6 @@
                   <label for="nombre" class="form-label">Nombre</label>
                   <input type="text" class="form-control" id="nombre" name="nombre"
                     placeholder="Ingrese su nombre completo" required>
-                </div>
-
-                <div class="col-12 col-md-6 mb-3">
-                  <label for="facultad" class="form-label">Facultad</label>
-                  <!-- #CAMBIAR LA CANTIDAD DE CARACTERES EN LE BD PARA FACULTAD -->
-                  <select class="form-select" id="facultad" name="facultad" required>
-                    <option value="">Universidad Nacional de Asuncion</option>
-                    <option value="">Universidad del Norte</option>
-                    <option value="">Universidad Tecnológica Intercontinental</option>
-                    <option value="">Universidad Técnica de Comercialización y Desarrollo</option>
-                    <option value="">Facultad Juan Pablo II</option>
-                    <option value="">Universidad Catolica</option>
-                    <option value="">Universidad Politécnica y Artística del Paraguay</option>
-                  </select>
                 </div>
 
                 <div class="col-12 col-md-6 mb-3">
@@ -312,7 +239,7 @@
               <div class="d-flex justify-content-center gap-4">
                 <button type="submit" class="btn btn-success">Agregar</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                  onclick="cerrarModal('modal-ag-estudiante')">Cerrar</button>
+                  onclick="cerrarModal('modal-ag-conductor')">Cerrar</button>
 
               </div>
           </div>
@@ -322,12 +249,12 @@
 
       </div>
     </div>
-    <!-- MODAL EDITAR ESTUDIANTE -->
-    <div class="modal" tabindex="-1" id="modal-edit-estudiante">
+    <!-- MODAL EDITAR CONDUCTOR -->
+    <div class="modal" tabindex="-1" id="modal-edit-conductor">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title mx-auto">Editar estudiante</h5>
+            <h5 class="modal-title mx-auto">Editar conductor</h5>
           </div>
           <div class="modal-body">
 
@@ -344,20 +271,6 @@
                   <label for="nombre" class="form-label">Nombre</label>
                   <input type="text" class="form-control" id="nombre" name="nombre"
                     placeholder="Ingrese su nombre completo" required>
-                </div>
-
-                <div class="col-12 col-md-6 mb-3">
-                  <label for="facultad" class="form-label">Facultad</label>
-                  <!-- #CAMBIAR LA CANTIDAD DE CARACTERES EN LE BD PARA FACULTAD -->
-                  <select class="form-select" id="facultad" name="facultad" required>
-                    <option value="">Universidad Nacional de Asuncion</option>
-                    <option value="">Universidad del Norte</option>
-                    <option value="">Universidad Tecnológica Intercontinental</option>
-                    <option value="">Universidad Técnica de Comercialización y Desarrollo</option>
-                    <option value="">Facultad Juan Pablo II</option>
-                    <option value="">Universidad Catolica</option>
-                    <option value="">Universidad Politécnica y Artística del Paraguay</option>
-                  </select>
                 </div>
 
                 <div class="col-12 col-md-6 mb-3">
